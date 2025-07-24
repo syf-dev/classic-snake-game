@@ -1,10 +1,65 @@
 * {
     font-family: monospace;
+    color: rgb(216, 206, 194);
     background-color: rgb(36, 29, 36);
-    color: rgb(245, 245, 245);
 }
 
 h1 {
+    font-size: 24px;
     text-align: center;
     text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.game-canvas {
+    background-color: rgb(21, 16, 26);
+    border-radius: 10px;
+    border: dashed 1px rgb(128, 128, 128);
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.score-container {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(201, 201, 201);
+    background-color: rgb(44, 36, 51);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: solid 1px rgb(128, 128, 128);
+    padding: 10px;
+}
+
+.keys-message {
+    font-size: 11px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(146, 146, 146);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.buttons {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#start-button,
+#restart-button {
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#start-button:hover,
+#restart-button:hover {
+    filter: brightness(0.8);
 }
