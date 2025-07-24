@@ -68,16 +68,19 @@ h1 {
     margin-top: 5px;
 }
 
-.button {
+.buttons {
     text-align: center;
     width: 500px;
     margin: auto;
     margin-top: 25px;
 }
 
-#start-button {
+.buttons button {
     font-size: 15px;
     font-weight: bold;
+    color: rgb(201, 201, 201);
+    background-color: rgb(44, 36, 51);
+    border: outset 2px rgb(133, 128, 121);
     width: 100px;
     height: 30px;
     padding: 5px;
@@ -85,7 +88,6 @@ h1 {
     cursor: pointer;
 }
 
-#start-button:hover,
-#restart-button:hover {
+.buttons button:hover {
     filter: brightness(0.8);
 }
