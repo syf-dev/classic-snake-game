@@ -32,6 +32,33 @@ h1 {
     padding: 10px;
 }
 
+.snake {
+    display: flex;
+    width: 40px;
+    margin: 5px;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.snake-body {
+    width: 25px;
+    height: 15px;
+    background-color: rgb(141, 67, 44);
+    border-radius: 2px;
+    border: solid 2px rgb(121, 52, 52);
+    box-sizing: border-box;
+}
+
+.snake-head {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(160, 116, 5);
+    border-radius: 2px;
+    border: solid 2px rgb(102, 77, 32);
+    box-sizing: border-box;
+}
+
+
 .keys-message {
     font-size: 11px;
     font-weight: bold;
@@ -41,15 +68,14 @@ h1 {
     margin-top: 5px;
 }
 
-.buttons {
+.button {
     text-align: center;
     width: 500px;
     margin: auto;
     margin-top: 25px;
 }
 
-#start-button,
-#restart-button {
+#start-button {
     font-size: 15px;
     font-weight: bold;
     width: 100px;
