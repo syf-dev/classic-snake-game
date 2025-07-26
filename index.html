@@ -10,16 +10,17 @@
         <h1>Classic Snake Game</h1>
         <div class="game-canvas">
             <div class="score-container">
-                Score = <span>0</span>
+                Score: <span id="game-score">0</span>
             </div>
-            <div class="snake">
+            <div class="out-message"></div>
+            <div id="snake">
                 <div class="snake-body"></div>
                 <div class="snake-head"></div>
             </div>
         </div>
-        <p class="keys-message">Use keyboard buttons (<span style="font-size: 15px;">↑ ↓ ← →</span>) to control snake's movement</p>
+        <p class="keys-message">Use keyboard buttons (<span style="font-size: 15px;">↑ ↓ ← →</span>) to control Snake's movement</p>
         <div class="buttons">
-            <button id="start-button" onclick="toggleStartButton()">▶ START</button>
+            <span id="play-button-area"><button id="play-button" onclick="togglePlayButton(pause=false)">▶ PLAY</button></span>
             <span id="restart-button-area"></span>
         </div>
 

@@ -24,38 +24,63 @@ h1 {
 .score-container {
     font-size: 16px;
     font-weight: bold;
-    color: rgb(201, 201, 201);
+    color: rgb(175, 175, 175);
     background-color: rgb(44, 36, 51);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom: solid 1px rgb(128, 128, 128);
+    height: 20px;
     padding: 10px;
 }
 
-.snake {
+.score-container #game-score {
+    background-color: transparent;
+    font-size: 22px;
+}
+
+.out-message {
+    font-family: 'Times New Roman', Times, serif;
+    position: fixed;
+    font-size: 150px;
+    transform: scale(1, 2.5);
+    text-align: center;
+    color: rgb(77, 27, 18);
+    opacity: 0.2;
+    background: transparent;
+    border-radius: 10px;
+    margin-top: 140px;
+    margin-left: 70px;
+    padding: 0;
+    z-index: 0;
+}
+
+#snake {
     display: flex;
-    width: 40px;
-    margin: 5px;
+    background: transparent;
+    width: fit-content;
+    height: 15px;
+    gap: 2px;
+    transform: translate(225px, 200px);
+    z-index: 1;
+}
+
+.snake-body, .snake-head {
+    width: 15px;
+    height: 15px;
     border-radius: 2px;
-    box-sizing: border-box;
 }
 
 .snake-body {
-    width: 25px;
-    height: 15px;
     background-color: rgb(141, 67, 44);
-    border-radius: 2px;
     border: solid 2px rgb(121, 52, 52);
-    box-sizing: border-box;
+    transform: scale(0.9);
 }
 
 .snake-head {
-    width: 15px;
-    height: 15px;
     background-color: rgb(160, 116, 5);
-    border-radius: 2px;
     border: solid 2px rgb(102, 77, 32);
-    box-sizing: border-box;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 
