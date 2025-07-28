@@ -3,6 +3,11 @@
     background-color: rgb(36, 29, 36);
 }
 
+body {
+    max-width: 500px;
+    margin: auto;
+}
+
 #title {
     text-align: center;
     width: fit-content;
@@ -95,4 +100,31 @@
 
 .buttons button:hover {
     filter: brightness(0.8);
+}
+
+.dev-info {
+    position: absolute;
+    color: rgb(176, 172, 180);
+    background-color: rgb(44, 36, 51);
+    box-shadow: 7px -7px 0px rgb(16, 12, 26);
+    width: fit-content;
+    bottom: 0;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.dev-info a {
+    background: none;
+    color: rgb(255, 255, 255);
+    text-decoration: solid;
+}
+
+.dev-info svg {
+    background: none;
+}
+
+.dev-info a:hover {
+    text-decoration: underline;
 }
