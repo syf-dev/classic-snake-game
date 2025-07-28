@@ -94,6 +94,11 @@ function moveSnake() {
                 return;
             }
 
+            if (snakeBody.some(segment => segment.x === head.x && segment.y === head.y)) { 
+                gameOver();
+                clearInterval(movementInterval);
+            }
+
             snakeBody.unshift(head);
             snakeBody.pop();
 
