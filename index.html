@@ -8,15 +8,12 @@
     </head>
     <body>
         <h1>Classic Snake Game</h1>
-        <div class="game-canvas">
+        <div class="game-box">
             <div class="score-container">
                 Score: <span id="game-score">0</span>
             </div>
-            <div class="out-message"></div>
-            <div id="snake">
-                <div class="snake-body"></div>
-                <div class="snake-head"></div>
-            </div>
+            <div class="game-message">Press 'PLAY'<br>to Start!</div>
+            <canvas id="game-canvas" width="490" height="450"></canvas>
         </div>
         <p class="keys-message">Use keyboard buttons (<span style="font-size: 15px;">↑ ↓ ← →</span>) to control Snake's movement</p>
         <div class="buttons">

@@ -11,12 +11,11 @@ h1 {
     margin-bottom: 30px;
 }
 
-.game-canvas {
-    background-color: rgb(21, 16, 26);
+.game-box {
     border-radius: 10px;
     border: dashed 1px rgb(128, 128, 128);
-    width: 500px;
-    height: 500px;
+    width: 490px;
+    height: 491px;
     margin: auto;
     margin-top: 25px;
 }
@@ -38,49 +37,22 @@ h1 {
     font-size: 22px;
 }
 
-.out-message {
-    font-family: 'Times New Roman', Times, serif;
+.game-message {
     position: fixed;
-    font-size: 150px;
-    transform: scale(1, 2.5);
+    font-size: 60px;
     text-align: center;
-    color: rgb(77, 27, 18);
+    color: rgb(68, 51, 68);
     opacity: 0.2;
     background: transparent;
     border-radius: 10px;
-    margin-top: 140px;
-    margin-left: 70px;
-    padding: 0;
-    z-index: 0;
+    margin: 150px 0px 0px 33px;
+    z-index: 5;
 }
 
-#snake {
-    display: flex;
-    background: transparent;
-    width: fit-content;
-    height: 15px;
-    gap: 2px;
-    transform: translate(225px, 200px);
-    z-index: 1;
-}
-
-.snake-body, .snake-head {
-    width: 15px;
-    height: 15px;
-    border-radius: 2px;
-}
-
-.snake-body {
-    background-color: rgb(141, 67, 44);
-    border: solid 2px rgb(121, 52, 52);
-    transform: scale(0.9);
-}
-
-.snake-head {
-    background-color: rgb(160, 116, 5);
-    border: solid 2px rgb(102, 77, 32);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+#game-canvas {
+    background-color: rgb(21, 16, 26);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
