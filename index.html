@@ -7,20 +7,21 @@
         <title>Classic Snake Game</title>
     </head>
     <body>
-        <h1>Classic Snake Game</h1>
+        <div id="title">
+            <h1>Classic Snake Game</h1>
+        </div>
         <div class="game-box">
             <div class="score-container">
                 Score: <span id="game-score">0</span>
             </div>
-            <div class="game-message">Press 'PLAY'<br>to Start!</div>
+            <div class="game-message">Press PLAY<br>to Start!</div>
             <canvas id="game-canvas" width="490" height="450"></canvas>
         </div>
         <p class="keys-message">Use keyboard buttons (<span style="font-size: 15px;">↑ ↓ ← →</span>) to control Snake's movement</p>
         <div class="buttons">
-            <span id="play-button-area"><button id="play-button" onclick="togglePlayButton(pause=false)">▶ PLAY</button></span>
+            <span id="play-button-area"><button id="play-button" onclick="togglePlayButton(pause=false);placeFood()">▶ PLAY</button></span>
             <span id="restart-button-area"></span>
         </div>
-
         <script src="./script.js"></script>
     </body>
 </html>

@@ -1,14 +1,20 @@
 * {
     font-family: monospace;
-    color: rgb(216, 206, 194);
     background-color: rgb(36, 29, 36);
 }
 
-h1 {
-    font-size: 24px;
+#title {
     text-align: center;
-    text-decoration: underline;
-    margin-bottom: 30px;
+    width: fit-content;
+    margin: auto;
+}
+
+#title h1 {
+    color: rgb(176, 172, 180);
+    background-color: rgb(44, 36, 51);
+    border: dashed rgb(133, 132, 134);
+    box-shadow: 7px 7px 0px rgb(16, 12, 26);
+    padding: 5px;
 }
 
 .game-box {
@@ -33,20 +39,22 @@ h1 {
 }
 
 .score-container #game-score {
+    color: rgb(216, 206, 194);;
     background-color: transparent;
     font-size: 22px;
 }
 
 .game-message {
-    position: fixed;
+    font-weight: bold;
+    position: absolute;
     font-size: 60px;
     text-align: center;
     color: rgb(68, 51, 68);
-    opacity: 0.2;
-    background: transparent;
-    border-radius: 10px;
-    margin: 150px 0px 0px 33px;
-    z-index: 5;
+    background-color: rgb(10, 9, 9);
+    border: 5px dotted;
+    border-radius: 5px;
+    margin: 150px 0px 0px 65px;
+    z-index: 1;
 }
 
 #game-canvas {
